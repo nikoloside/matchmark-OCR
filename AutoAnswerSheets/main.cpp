@@ -21,7 +21,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include "tiffReader.hpp"
+//#include "tiffReader.hpp"
 #include "nkRecognizer.hpp"
 
 #include <opencv2/core/core.hpp>

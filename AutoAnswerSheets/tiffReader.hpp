@@ -7,7 +7,6 @@
 //
 
 #ifndef tiffReader_hpp
-
 #define tiffReader_hpp
 
 #include <opencv2/core/core.hpp>
@@ -19,9 +18,6 @@
 #include <iostream>
 #include "tiff.h"
 #include "tiffio.h"
-
-
-
 
 std::vector < cv::Mat > tiffRead(const char* imageName);
 

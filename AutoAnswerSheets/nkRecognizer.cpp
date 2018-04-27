@@ -10,11 +10,6 @@
 
 #include <iostream>
 #include <unistd.h>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/core.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/calib3d.hpp>
 
 using namespace std;
 using namespace cv;
@@ -52,6 +47,7 @@ vector < Mat >  formROI(Mat& input,int width, int height, float WHrateMin, float
     findContours(step4, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_NONE);
     
     // 輪郭が四角形かの判定
+    Point2f vertices[4];
     for (auto contour = contours.begin(); contour != contours.end(); contour++){
         // 輪郭を直線近似
         vector< cv::Point > approx;
@@ -61,7 +57,7 @@ vector < Mat >  formROI(Mat& input,int width, int height, float WHrateMin, float
         // 面積の一番小さい外接矩形で凸図形を囲み
         RotatedRect rect = minAreaRect(Mat(*contour));
         // 外接矩形の４つの点をRotatedRect rectから変換
-        Point2f vertices[4];
+        //Point2f vertices[4];
         rect.points(vertices);
         double width_image = rect.size.width;
         double height_image = rect.size.height;

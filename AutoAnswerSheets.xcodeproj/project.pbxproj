@@ -12,7 +12,6 @@
 		0B1EE40F208DC90400B9DBCA /* libopencv_imgcodecs.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1EE40E208DC90400B9DBCA /* libopencv_imgcodecs.3.4.1.dylib */; };
 		0B1EE411208DC92A00B9DBCA /* libopencv_highgui.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1EE410208DC92A00B9DBCA /* libopencv_highgui.3.4.1.dylib */; };
 		0B1EE413208DC96900B9DBCA /* libopencv_core.3.4.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1EE412208DC96900B9DBCA /* libopencv_core.3.4.1.dylib */; };
-		CE3495481E8A7D4E001FA00D /* tiffReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE3495461E8A7D4E001FA00D /* tiffReader.cpp */; };
 		CE34954B1E8A9355001FA00D /* nkRecognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE3495491E8A9355001FA00D /* nkRecognizer.cpp */; };
 		CEC7AF251E6ED43A00175F64 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEC7AF241E6ED43A00175F64 /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -35,8 +34,6 @@
 		0B1EE40E208DC90400B9DBCA /* libopencv_imgcodecs.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.4.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.4.1_3/lib/libopencv_imgcodecs.3.4.1.dylib; sourceTree = "<group>"; };
 		0B1EE410208DC92A00B9DBCA /* libopencv_highgui.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.4.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.4.1_3/lib/libopencv_highgui.3.4.1.dylib; sourceTree = "<group>"; };
 		0B1EE412208DC96900B9DBCA /* libopencv_core.3.4.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.4.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.4.1_3/lib/libopencv_core.3.4.1.dylib; sourceTree = "<group>"; };
-		CE3495461E8A7D4E001FA00D /* tiffReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tiffReader.cpp; sourceTree = "<group>"; };
-		CE3495471E8A7D4E001FA00D /* tiffReader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tiffReader.hpp; sourceTree = "<group>"; };
 		CE3495491E8A9355001FA00D /* nkRecognizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nkRecognizer.cpp; sourceTree = "<group>"; };
 		CE34954A1E8A9355001FA00D /* nkRecognizer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nkRecognizer.hpp; sourceTree = "<group>"; };
 		CEC6F8A41EA3609B00EE1C19 /* ParameterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParameterList.plist; sourceTree = "<group>"; };
@@ -95,8 +92,6 @@
 				CEC7AF241E6ED43A00175F64 /* main.cpp */,
 				CE3495491E8A9355001FA00D /* nkRecognizer.cpp */,
 				CE34954A1E8A9355001FA00D /* nkRecognizer.hpp */,
-				CE3495461E8A7D4E001FA00D /* tiffReader.cpp */,
-				CE3495471E8A7D4E001FA00D /* tiffReader.hpp */,
 				CEC6F8A41EA3609B00EE1C19 /* ParameterList.plist */,
 			);
 			path = AutoAnswerSheets;
@@ -158,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC7AF251E6ED43A00175F64 /* main.cpp in Sources */,
-				CE3495481E8A7D4E001FA00D /* tiffReader.cpp in Sources */,
 				CE34954B1E8A9355001FA00D /* nkRecognizer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
